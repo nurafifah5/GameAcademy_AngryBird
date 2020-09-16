@@ -56,7 +56,7 @@ public class Bird : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    public virtual void OnCollisionEnter2D(Collision2D col)
     {
         state = BirdState.HitSomething;
     }
